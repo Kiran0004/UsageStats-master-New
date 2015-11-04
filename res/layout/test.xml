@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/dataUsageBtn"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/startAlarm"
+        android:layout_below="@+id/startAlarm"
+        android:layout_marginTop="35dp"
+        style="@style/btnStyleBlackpearl"
+        android:text="Data Usage" />
+
+    <Button
+        android:id="@+id/appUsage"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/dataUsageBtn"
+        android:layout_alignBottom="@+id/dataUsageBtn"
+        android:layout_alignLeft="@+id/stopAlarm"
+        style="@style/btnStyleBlackpearl"
+        android:text="App Usage" />
+
+    <Button
+        android:id="@+id/runningApps"
+        style="@style/btnStyleBlackpearl"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/dataUsageBtn"
+        android:layout_below="@+id/dataUsageBtn"
+        android:layout_marginTop="41dp"
+        android:text="All Apps" />
+
+    <Button
+        android:id="@+id/startAlarm"
+        style="@style/btnStyleBlackpearl"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="30dp"
+        android:layout_toLeftOf="@+id/stopAlarm"
+        android:text="Start Monitor" />
+
+    <Button
+        android:id="@+id/stopAlarm"
+        style="@style/btnStyleBlackpearl"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/dataUsageBtn"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="14dp"
+        android:text="Stop Monitor" />
+
+</RelativeLayout>
